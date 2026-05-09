@@ -31,4 +31,6 @@ public class Usuario {
     
     @Column(nullable = false)
     private String password;
+
+    //Hola wapo, si ves esto es porque te gusta el codigo, saludos desde el futuro :D
 }
