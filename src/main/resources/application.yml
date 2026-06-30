@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: ms-login
+  datasource:
+    url: jdbc:mysql://localhost:3307/ms_login
+    username: root
+    password: 
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8081
+
+jwt:
+  secret: c2VjcmV0b011eUZ1ZXJ0ZVBhcmFDYXJkTGlua1Byb3llY3RvRHVvYzIwMjY=
+  expiration: 86400000
+
+springdoc:
+  api-docs:
+    enabled: true
+    version: openapi-3-0
+  swagger-ui:
+    enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+      
